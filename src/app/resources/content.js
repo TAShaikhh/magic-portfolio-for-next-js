@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Umer',
+    lastName:  'Shaikh',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Software Engineer',
+    avatar:    '',
+    location:  'America/Toronto',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: []  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/once-ui-system/nextjs-starter',//add link to git hub 
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/umer-shaikh-5b7bb61a5/',
     },
     {
         name: 'X',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'shaikh.usa786@hotmail.com',
     },
 ]
 
@@ -47,8 +47,17 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Umer Shaikh</>,
+    subline: <>
+                <p>Software Engineering '27</p>
+                <hr style={{ margin: '1rem 0', border: 'none', borderTop: '0px solid #ccc' }} />
+                <hr style={{ margin: '1rem 0', border: 'none', borderTop: '0px solid #ccc' }} />
+                <p>Welcome to my Portfolio. My name is Umer Shaikh, and I'm a third-year software engineering student at York University.</p>
+                <hr style={{ margin: '1rem auto', marginLeft: '10%', border: 'none', borderTop: '1px solid #ccc', width: '50%' }} />
+                <p>To learn more about me, feel free to explore my page!</p>
+                
+                </>,
+    //subline2: <>Welcome to my Portfolio. My name is Umer Shaikh, and I'm a third-year software engineering student at York University.</>
 }
 
 const about = {
@@ -60,7 +69,7 @@ const about = {
         subItems: false
     },
     avatar: {
-        display: true
+        display: false
     },
     calendar: {
         display: true,

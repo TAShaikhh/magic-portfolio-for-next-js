@@ -21,8 +21,20 @@ li {
     }
 }
 
+.image-container {
+    width: auto;
+    height: 100vh; /* Adjust height based on your needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures no overflow from the container */
+}
+
 img {
     user-select: none;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Ensures the entire image is visible */
 }
 
 /* SELECTION */
